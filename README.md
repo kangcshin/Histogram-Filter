@@ -1,1 +1,1 @@
-Optimized verson of Histogram-Filter in C++
+Optimized verson of Histogram Filter in C++
