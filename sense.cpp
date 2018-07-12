@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vvector< vector <float> > sense_improved(char color, 
+vector< vector <float> > sense_improved(char color, 
 	vector< vector <char> > &grid, 
 	vector< vector <float> > &beliefs, 
 	float p_hit,
@@ -18,7 +18,7 @@ vvector< vector <float> > sense_improved(char color,
 				beliefs[i][j] = beliefs[i][j] * p_hit;
 			}
 			else{
-				beliefs[i][j] = beliefs[i][j] ( p_miss);
+				beliefs[i][j] = beliefs[i][j] * ( p_miss);
 			}
 		}
 	}
