@@ -5,7 +5,6 @@ using namespace std;
 
 vector < vector <float> > blur(vector < vector < float> > grid, float blurring){
   	static float GLOBAL_BLURRING = 0.12;
-
 	static float CENTER = 1.0 - GLOBAL_BLURRING;
 	static float CORNER = GLOBAL_BLURRING / 12.0;
 	static float ADJACENT = GLOBAL_BLURRING / 6.0;
@@ -14,7 +13,6 @@ vector < vector <float> > blur(vector < vector < float> > grid, float blurring){
 	static vector <int> DY = {-1, 0, 1};
 
 	static vector < vector <float> > GLOBAL_WINDOW = { {CORNER, ADJACENT, CORNER}, {ADJACENT, CENTER, ADJACENT}, {CORNER, ADJACENT, CORNER} };
-
 
 	vector < vector <float> > window;
 	vector < vector <float> > newGrid;
@@ -47,6 +45,5 @@ vector < vector <float> > blur(vector < vector < float> > grid, float blurring){
 			}
 		}
 	}
-
 	return newGrid;
 }

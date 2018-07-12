@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "vector": "cpp"
     }
 }
