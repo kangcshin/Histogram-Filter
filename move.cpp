@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// OPTIMIZATION: Pass large variable by reference
 vector< vector <float> > move(int dy, int dx, 
 	vector < vector <float> > beliefs) 
 {
@@ -13,11 +12,9 @@ vector< vector <float> > move(int dy, int dx,
 
 	float belief;
 	vector < vector <float> > newGrid;
-  
-  	// OPTIMIZATION: Use improved zeros function
+
 	newGrid = zeros(height, width);
 
-// OPTIMIZATION: Eliminate any variables that aren't needed
 	vector <float> row, newRow;
 	int i, j, new_i, new_j;
 	
