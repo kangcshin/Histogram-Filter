@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector < vector <float> > zeros_improved(int height, int width) {
+vector < vector <float> > zeros(int height, int width) {
 	int i;
 	vector < vector <float> > newGrid;
 	newGrid.reserve(height);

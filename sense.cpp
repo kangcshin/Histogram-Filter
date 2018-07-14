@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector< vector <float> > sense_improved(char color, 
+vector< vector <float> > sense(char color, 
 	vector< vector <char> > &grid, 
 	vector< vector <float> > &beliefs, 
 	float p_hit,

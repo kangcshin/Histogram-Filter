@@ -1,7 +1,7 @@
 #include "headers/normalize.h"
 using namespace std;
 
-vector< vector<float> > normalize_improved(vector< vector <float> > &grid) {
+vector< vector<float> > normalize(vector< vector <float> > &grid) {
 
 	float total = 0.0;
 	int rows = grid.size();

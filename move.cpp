@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector< vector <float> > move_improved(int dy, int dx, vector < vector <float> > &beliefs) 
+vector< vector <float> > move(int dy, int dx, vector < vector <float> > &beliefs) 
 {
 	int height, width;
 	height = beliefs.size();
